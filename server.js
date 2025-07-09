@@ -3,6 +3,7 @@ const express=require('express')
 const app=express();
 const db=require('./db');
 
+//bodyparser used
 const bodyparser=require('body-parser');
 app.use(bodyparser.json());
 const personroutes=require('./routes/personcall');
