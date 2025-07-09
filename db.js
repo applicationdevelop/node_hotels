@@ -12,7 +12,7 @@ require('dotenv').config();
 // Connect to MongoDB using Mongoose
 mongoose.connect(mongoURI, {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true 
 })
 .then(() => {
     console.log('✅ Connected to MongoDB successfully!');
