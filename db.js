@@ -1,9 +1,12 @@
 // mongodb-connect.js
 
 const mongoose = require('mongoose');
+require('dotenv').config();
 
 // Replace with your MongoDB connection string
-const mongoURI = 'mongodb://localhost:27017/hotel'; // Local MongoDB
+
+ //const mongoURI = ''; // Local MongoDB
+ const mongoURI=process.env.DB_URL//mongodb atlas
 // const mongoURI = 'your_mongodb_atlas_connection_string'; // For MongoDB Atlas
 
 // Connect to MongoDB using Mongoose
