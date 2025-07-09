@@ -14,7 +14,7 @@ const userdata=require('./models/practics');*/
 app.use('/person',personroutes);
 app.use('/item',itemroutes);
 
-
+//listen in port 3000
 app.listen(3000,()=>{
 console.log("server run in 3000")
 })
